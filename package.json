@@ -2,10 +2,12 @@
   "name": "example-hello-world",
   "private": true,
   "scripts": {
-    "dev": "nitro dev",
+    "dev": "concurrently \"nitro dev\" \"cd highscore-front & npx vite\"",
     "build": "nitro build"
   },
   "devDependencies": {
+    "@vercel/kv": "^0.2.3",
+    "concurrently": "^8.2.1",
     "nitropack": "latest"
   }
 }
