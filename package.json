@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"nitro dev\" \"vite\"",
-    "build": "concurrently \"nitro build\" \"vite build\""
+    "build": "nitro build && vite build"
   },
   "devDependencies": {
     "@vercel/kv": "^0.2.3",
