@@ -2,12 +2,13 @@
   "name": "example-hello-world",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"nitro dev\" \"cd highscore-front & npx vite\"",
-    "build": "nitro build"
+    "dev": "concurrently \"nitro dev\" \"vite\"",
+    "build": "concurrently \"nitro build\" \"vite build\""
   },
   "devDependencies": {
     "@vercel/kv": "^0.2.3",
     "concurrently": "^8.2.1",
-    "nitropack": "latest"
+    "nitropack": "latest",
+    "vite": "^4.4.5"
   }
 }
