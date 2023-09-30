@@ -45,9 +45,11 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const url = new URL(
-    import.meta.env.VITE_BACKEND_URL ?? document.location.href
-  );
+  let baseUrl = import.meta.env.VITE_BACKEND_URL;
+  if (!baseUrl) {
+    baseUrl = document.location.href;
+  }
+  const url = new URL(baseUrl);
   url.pathname = "/api/scores/save";
 
   const data = {
