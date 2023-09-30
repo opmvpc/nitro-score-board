@@ -1,5 +1,5 @@
-node_modules
-.nitro
-.output
-dist
-public
+/node_modules
+/.nitro
+/.output
+/front/dist
+/public
