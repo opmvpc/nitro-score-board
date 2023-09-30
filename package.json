@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"nitro dev\" \"vite front\"",
-    "build": "nitro build && mkdir public && cd front && npx vite build && cp -r dist ../public"
+    "build": "nitro build && mkdir public && cd front && npx vite build && cp -r dist/* ../public"
   },
   "devDependencies": {
     "@vercel/kv": "^0.2.3",
