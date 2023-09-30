@@ -46,6 +46,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   let baseUrl = import.meta.env.VITE_BACKEND_URL;
+  console.log(baseUrl);
   if (!baseUrl) {
     baseUrl = document.location.href;
   }

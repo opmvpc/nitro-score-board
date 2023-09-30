@@ -1,6 +1,6 @@
 export default defineNitroConfig({
   storage: {
-    db: { driver: "fs", base: "./data/db" },
+    db: { driver: "vercelKV" },
   },
   routeRules: {
     "/api/scores/**": {
