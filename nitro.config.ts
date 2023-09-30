@@ -6,7 +6,7 @@ export default defineNitroConfig({
     "/api/scores/**": {
       cors: true,
       headers: {
-        "Access-Control-Allow-Origin": import.meta.env.NITRO_FRONT_URL ?? "*",
+        "Access-Control-Allow-Origin": "*",
       },
     },
   },
