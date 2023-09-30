@@ -2,8 +2,8 @@
   "name": "example-hello-world",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"nitro dev\" \"vite\"",
-    "build": "nitro build && vite build"
+    "dev": "concurrently \"nitro dev\" \"vite front\"",
+    "build": "nitro build && npx vite build front && cp -r front/dist/* public"
   },
   "devDependencies": {
     "@vercel/kv": "^0.2.3",
