@@ -2,7 +2,7 @@
   "name": "example-hello-world",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"nitro dev\" \"vite front\"",
+    "dev": "concurrently \"vite front\" \"nitro dev\"",
     "build": "npx vite build front --outDir ../public --emptyOutDir && nitro build"
   },
   "devDependencies": {
